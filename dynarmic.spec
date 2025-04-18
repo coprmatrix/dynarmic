@@ -12,12 +12,12 @@ BuildRequires: rpm_macro(cmake)
 BuildRequires: rpm_macro(cmake_build)
 BuildRequires: rpm_macro(cmake_install)
 BuildRequires: cmake
-BuildRequires: cmake(fmt)
-BuildRequires: cmake(mcl)
-BuildRequires: cmake(oaknut)
-BuildRequires: cmake(tsl-robin-map)
-BuildRequires: cmake(xbyak)
-BuildRequires: cmake(zydis)
+BuildRequires: fmt-devel
+BuildRequires: mcl-devel
+BuildRequires: oaknut-devel
+BuildRequires: robin-map-devel
+BuildRequires: xbyak-devel
+BuildRequires: zydis-devel
 BuildRequires: boost-devel
 
 Source: https://github.com/huakim/%{name}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
