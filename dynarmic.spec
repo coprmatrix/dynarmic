@@ -16,7 +16,9 @@ BuildRequires: fmt-devel
 BuildRequires: mcl-devel
 BuildRequires: oaknut-devel
 BuildRequires: robin-map-devel
+%ifarch %{x86_64} x86_64
 BuildRequires: xbyak-devel
+%endif
 BuildRequires: zydis-devel
 BuildRequires: boost-devel
 
