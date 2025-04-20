@@ -16,12 +16,11 @@ BuildRequires: cmake(fmt)
 BuildRequires: cmake(mcl)
 BuildRequires: cmake(oaknut)
 BuildRequires: cmake(tsl-robin-map)
+ExclusiveArch: %{arm64} aarch64 %{x86_64} x86_64
 %ifarch %{x86_64} x86_64
 BuildRequires: cmake(xbyak)
 %endif
-%ifnarch s390x
 BuildRequires: cmake(zydis)
-%endif
 BuildRequires: boost-devel
 
 Source: https://github.com/huakim/%{name}/archive/refs/tags/%{version}.tar.gz#/%{name}-%{version}.tar.gz
