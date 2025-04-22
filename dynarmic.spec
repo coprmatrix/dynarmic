@@ -28,6 +28,18 @@ Source: https://github.com/huakim/%{name}/archive/refs/tags/%{version}.tar.gz#/%
 
 %package devel
 Summary: %{summary}.
+Requires: cmake(fmt)
+Requires: cmake(mcl)
+Requires: cmake(oaknut)
+Requires: cmake(tsl-robin-map)
+%ifarch %{x86_64} x86_64
+Requires: cmake(xbyak)
+%endif
+%ifnarch s390x
+Requires: cmake(zydis)
+%endif
+Requires: boost-devel
+
 
 %description devel
 %{summary}.
